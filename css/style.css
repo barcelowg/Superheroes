@@ -1,155 +1,177 @@
 * {
+        box-sizing: border-box;
         margin: 0;
-}
+        padding: 0;
+      }
 .top {
         position: absolute;
-        width: 1024px;
+        display: flex;
+        width: 100%;
         height: 38px;
         left: 0px;
         top: 0px;
-        background: #1CD1B0;
-        padding-left:  15px;
+        background: rgb(28, 209, 176);
+        padding-left: 15px;
         box-sizing: border-box;
-}
+        align-items: center;
+    }
 
 body {
         background: #E5E5E5;
         font-family: 'Roboto', sans-serif;
 }
 
-header { 
+header {
+        width: 100%;
+        height: 50px;
+        display: flex;
         box-sizing: border-box;
         position: absolute;
-        width: 1024px;
-        height: 101px;
-        left: 0px;
-        top: 38px;
         background: #00669F;
-        box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 10px 7px rgb(0 0 0 / 25%);
         padding: 15px;
-}
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+        top: 38px;
 
+    }
 
-.contenedor{
+  
+
+    .container-card {
+        width: 100%;
         display: flex;
-        justify-content:center;
-        flex-wrap:wrap;
-        position: absolute;
-        width: 961px;
-        height: 530px;
-        left: 33px;
-        top: 292px;
-        }
-
-
-.tarjeta_batman1 {
-        position: absolute;
-        display:flex;
-        flex-direction:column;
-        justify-content:space-between;
-        border: 1px solid lightgray;
-        box-shadow: 2px 2px 8px 4px #d3d3d3d1;
-        border-radius:15px;
-        width: 300px;
-        height: auto;
-        left: 33px;
-        top: 292px;
-}
-
-.tarjeta_harley {
-        position: absolute;
-        display:flex;
-        flex-direction:column;
-        justify-content:space-between;
-        border: 1px solid lightgray;
-        box-shadow: 2px 2px 8px 4px #d3d3d3d1;
-        border-radius:15px;
-        width: 300px;
-        height: auto;
-        left: 362px;
-        top: 292px;
-}
-
-.tarjeta_batman2 {
-        position: absolute;
-        display:flex;
-        flex-direction:column;
-        justify-content:space-between;
-        border: 1px solid lightgray;
-        box-shadow: 2px 2px 8px 4px #d3d3d3d1;
-        border-radius:15px;
-        width: 300px;
-        height: auto;
-        left: 692px;
-        top: 293px;
-}
-.titulo{
-        text-align:center; 
-        padding:8px;
-        font-variant: small-caps;
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 35px;
-        color: #000000;
-        position: relative;
-       
-}
-
-.cuerpo {
-        position: relative;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        color: #333333;
+        max-width: 1100px;
+        margin: auto;
+        align-items: stretch;
+        justify-content: space-evenly;
+        align-content: stretch;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        min-height: calc(100vh - 88px - 51px);
+    }
+    .title-cards{
+        width: 100%;
+        max-width: 1080px;
+        margin: auto;
+        padding: 20px;
+        margin-top: 20px;
+        text-align: center;
+        color: black;
+        
+    }
+    .card {
+        width: 100%;
+        margin: 20px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0px 1px 10px rgb(0 0 0 / 20%);
+        transition: all 400ms ease-out;
+        cursor: default;
+        border-radius: 16px 16px 0px 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        
+    }
+    
+    
+    .card:hover{
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+        transform: translateY(-3%);
+    }
+    
+    .card .contenido-card{
         padding: 15px;
         text-align: justify;
-       
-}
-i {
-        position: relative;
-        color: red;
-        left: 30px;
-        top: -180px;
-}
-
-img {
-        border-radius: 16px 16px 0px 0px;
-}
-
-
-.rostro{
-        width: 100px;
-        border-radius: 100%;
-        position: relative;
-        left: 100px;
-        top: -80px;
-
-}
-
-
-
-
-.pie{
+    }
+    .card .contenido-card h3{
+        padding-bottom: 20px;
+        color: #7a7a7a;
+    }
+    .card .contenido-card p{
         
-        background: #6699ff;
-        border-radius:0 0 15px 15px;
+        color: #6a6a6a;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .card .contenido-card h3 {
+        font-weight: 700;
+        color: black;
+        text-align: center;
+        font-size: 28px;
+    }
+    .card .contenido-card a {
+        display: flex;
         padding: 10px;
-        text-align:center; }
-        .pie a{
+        margin-top: 10px;
         text-decoration: none;
         color: white;
+        border-radius: 4px;
+        transition: all 400ms ease 0s;
+        margin-bottom: 5px;
+        align-items: flex-start;
+        align-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background: #2fb4cc;
+    }
+        
+    .flex-container {
+      flex-wrap: wrap;
+    }
+    
+    @media only screen and (min-width:320px) and (max-width:768px){
+        .container-card1{
+            flex-wrap: wrap;
         }
+        .card1{
+            margin: 15px;
+        }
+    }
 
+  
 
+.card .image img {
+        border-radius: 18px 18px 0px 0px;
+        width: 105%;
+       
+        
+
+    }
+    
+.card .image i {
+        position: relative;
+        color: red;
+        left: 20px;
+        top: -200px;
+}
+
+.card .image #rostro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+    border-radius: 100%;
+    position: relative;
+     top: -80px;
+    
+}
 
 footer {    
         position: absolute;
-        width: 1024px;
+     
+        width: 100%;
         height: 51px;
+        margin-left: auto;
+        margin-right: auto;
         left: 0px;
-        top: 972px;
         background: #00669F;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         padding: 15px;
