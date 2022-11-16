@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superheroes</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="descuentos">Descuentos 20%</div>
+        <div class="titulo"><h1>Heroes</h1></div>
+    </header>
+    
+    <div class="formulario">
+         <div class="titulo_formulario">
+            <h2>Añadí tu super!</h2>
+            <p>Agregá tu personaje favorito completando las opciones</p>
+        </div>  
+        <div class="cuerpo">
+            <form action="resultado.html" method="GET">
+                <div >
+                        
+                        <label for="nombre">Nombre</label><br>
+                        <input type="text" id="nombre"><br><br>
+                        <label for="fecha">Fecha</E-mail></label><br>
+                        <input type="date" id="fecha" name="fecha"><br><br>
+                        <textarea name="descripcion" id="" cols="40" rows="20" placeholder="Descripción"></textarea>
+                    
+                </div>
+                <div >
+                        
+                        <label for="especie">Especie</label>
+                            <select name="especie" id="especie">
+                                <option value="" selected disabled>...</option>
+                                <option value="humano">Humano</option>
+                                <option value="Extraterreste">Extraterreste</option>
+                                <option value="nohumano">No Humano</option>
+                                <option value="otra">Otra</option>
+                            </select>
+<br><br>
+                        <label for="imagen">Agregar foto</label>
+                        <input type="file" name="imagen" id="imagen"><br><br>
+                        <p>Poderes <br><br>
+                        <input type="checkbox" name="poderes" id="poderes1">
+                        <label for="poderes">Volar</label><br><br>
+                        <input type="checkbox" name="poderes" id="poderes2">
+                        <label for="poderes">Superinteligencia</label><br><br>
+                        <input type="checkbox" name="poderes" id="poderes3">
+                        <label for="poderes">Vista de rayo laser</label><br><br>
+                        <input type="checkbox" name="poderes" id="poderes4">
+                        <label for="poderes">Billetera groda</label></p>
+                    
+                    <hr>
+                
+                        <p>Tipo de personaje<br><br>
+                            <input type="radio" id="tipo1" name="tipo" value="heroes" />
+                        <label for="tipo1"> Heroe / Heroina </label><br><br>
+                        <input type="radio" id="tipo2" name="tipo" value="villanos" />
+                        <label for="tipo2"> Villano / Villana </label>
+                        </p>
+                </div>
+        </div>
+                <div class="enviar">
+                    <input type="submit" id="añadir" name="añadir" value="Añadir">
+                </div>   
+    </form>
+        </div>
+             
+    </div>     
+
+
+    
+
+    <footer><div>Todos los derechos reservados a  Digital Mind</div></footer>
+
+</body>
+</html>
+  
